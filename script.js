@@ -9,8 +9,7 @@ document.addEventListener("keydown", (e) => {
     guess();
   }
 });
-
-export function guess() {
+function guess() {
   let base = "chat";
   let word = document.querySelector("#word").value.toLowerCase();
   let result = tryWord(word, base);
